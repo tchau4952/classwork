@@ -1,7 +1,7 @@
 package chatbot;
 
-public class Chatbot 
-{
+public class Chatbot {
+	
 	private String username;
 	private boolean chatting;
 	private Topic Tristan;
@@ -13,9 +13,16 @@ public class Chatbot
 		username = "Unknown User";
 		chatting = true;
 	}
+	
+	public String getUsername() {
+		return username;.
+	}
+	
+	public Topic getTristan() {
+		return Tristan;
+	}
 
-	public void startChatting() 
-	{
+	public void startChatting() {
 		ChatbotMain.print("Hi! I am an intelligent machine that can respond to your input. Tell me your name.");
 		username = ChatbotMain.getInput();
 		while(chatting)
