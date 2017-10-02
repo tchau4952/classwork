@@ -4,8 +4,6 @@ public class Student implements Attendee {
 	public String firstName;
 	public String lastName;
 	public boolean present = false;
-	}
-
 	public Student(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -36,7 +34,7 @@ public class Student implements Attendee {
 	}
 
 	public String getReportString() {
-		String report = 1;
+		String report = "1";
 		report = restrictStringToLength(report, 20);
 		report += firstName;
 		report = restrictStringToLength(report, 40);
@@ -48,14 +46,16 @@ public class Student implements Attendee {
 		}
 		return report;
 	}
+	
 	public String restrictStringToLength(String s, int length) {
 		if(s.length() > length) {
-			s = s.substring(0, length - 3)= "...";
+			s = s.substring(0, length - 3) + "...";
 		}
 		while(s.length() < length) {
 			s += " ";
 		}
 		return s;
+	}
 }
 
 
