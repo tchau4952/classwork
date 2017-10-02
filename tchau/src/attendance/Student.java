@@ -34,7 +34,7 @@ public class Student implements Attendee {
 	}
 
 	public String getReportString() {
-		String report = "1";
+		String report = lastName;
 		report = restrictStringToLength(report, 20);
 		report += firstName;
 		report = restrictStringToLength(report, 40);
