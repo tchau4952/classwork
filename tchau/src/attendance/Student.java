@@ -57,5 +57,3 @@ public class Student implements Attendee {
 		return s;
 	}
 }
-
-
